@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": "dist/oshop",    
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
