@@ -1,27 +1,31 @@
-# Oshop
+# eKart
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)]()
 
-## Development server
+eKart is an online grocery store. Anonymous users can look through, filter, and add items to a shopping cart. Authentication (currently via Google OAuth api) is necessary to "check-out," as well as see previous orders. Only Admin can create,edit,delete and upload photos of items. He can access all orders. All site, user, and product info is stored in a Firebase database which serves as the backend.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Getting Started
 
-## Code scaffolding
+These instructions will get you a copy of the project up and running on your local machine.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisites
 
-## Build
+The following must be installed in your computer
+* Node.js
+* Angular CLI 10 or above
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### To run the project
 
-## Running unit tests
+Before running this application on your machine, create a Firebase project ([Firebase Console](https://console.firebase.google.com/) > + add project) . You need to replace the Firebase settings in /src/environments with the settings of your own Firebase project. Then follow the steps below:
+```
+$ npm install
+$ ng serve
+```
+This starts a development server. Navigate to `http://localhost:4200/` to see the app running.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technologies
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* TypeScript 4.0.2
+* Angular 10
+* Bootstrap 4
+* Firebase Realtime Database 
